@@ -1,4 +1,4 @@
-# Retrieval-Augmented Generation (RAG) for Enterprise Knowledge 
+# Retrieval-Augmented Generation for Enterprise Knowledge 
 
 ## Project Overview
 Organizations store large volumes of enterprise knowledge across multiple platforms such as SharePoint, emails, and internal QA systems. This information is often fragmented, unstructured, and difficult to search effectively, leading to inefficiencies in retrieving relevant insights.
@@ -18,8 +18,10 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
 
 ## Architecture & Design Decisions
 <p align="center">
-    <img src="images/rag.png" alt="RAG" width="150">
-    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="150">
+    <img src="images/rag.png" alt="RAG" width="500">
+</p>    
+<p align="center">
+    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="500">
 </p>
 
 ### Process flow
@@ -34,7 +36,7 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
         * semantic similarity (vector search)
         * lexical matching (rapidfuzz for character-based scoring) 
 <p align="center">
-    <img src="images/hybrid_search.png" alt="Hybrid Search" width="150">
+    <img src="images/hybrid_search.png" alt="Hybrid Search" width="500">
 </p>
 * RAG generation
     * Relevant document chunks are retrieved and provided as context to the language model (model='gpt-4.1-mini')
@@ -46,11 +48,11 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
 
 ## Solution Review and Execution
 ## Dependencies
-pandas>=2.0.0
-numpy>=1.24.0
-databricks-vectorsearch>=2.19.0
-rapidfuzz
-openai
+* pandas>=2.0.0
+* numpy>=1.24.0
+* databricks-vectorsearch>=2.19.0
+* rapidfuzz
+* openai
 
 ## Installation and execution
 1. Clone the repository: git clone https://github.com/ongsm/cerecon.git
