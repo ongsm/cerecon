@@ -17,14 +17,16 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
   * to ensure enterprise-grade security and access control using Azure-native services
 
 ## Architecture & Design Decisions
-### RAG Fundemental
+### Retrieval Augmented Generation (RAG) Fundemental
+* RAG is a technique that combines the capabilities of a pre-trained large language model (LLM) with an external data source (Vector Database).
+
 <p align="center">
-    <img src="images/rag.png" alt="RAG" width="1000">
+    <img src="images/rag.png" alt="RAG" width="1200">
 </p>   
 
 ### Document Search Process flow
 <p align="center">
-    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="1000">
+    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="1200">
 </p>
 
 * Data sources
