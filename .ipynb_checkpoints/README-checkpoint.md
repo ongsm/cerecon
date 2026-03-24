@@ -21,12 +21,12 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
 * RAG is a technique that combines the capabilities of a pre-trained large language model (LLM) with an external data source (Vector Database).
 
 <p align="center">
-    <img src="images/rag.png" alt="RAG" width="300">
+    <img src="images/rag.png" alt="RAG" width="350">
 </p>   
 
 ### Document Search Process flow
 <p align="center">
-    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="1200">
+    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="1300">
 </p>
 
 * Data sources
@@ -40,7 +40,7 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
         * semantic similarity (vector search)
         * lexical matching (rapidfuzz for character-based scoring)
     * hybrid search score computation (with equal weightage for both methods) to obtain the ranking of the relevant documents.
-    * 
+      
 <p align="right">
     <img src="images/hybrid_search.png" alt="Hybrid Search" width="800">
 </p>
