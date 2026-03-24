@@ -38,6 +38,7 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
 <p align="center">
     <img src="images/hybrid_search.png" alt="Hybrid Search" width="1000">
 </p>
+
 * RAG generation
     * Relevant document chunks are retrieved and provided as context to the language model (model='gpt-4.1-mini')
     * The model generates grounded responses based on retrieved content
