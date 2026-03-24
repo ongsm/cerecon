@@ -18,10 +18,10 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
 
 ## Architecture & Design Decisions
 <p align="center">
-    <img src="images/rag.png" alt="RAG" width="500">
+    <img src="images/rag.png" alt="RAG" width="1000">
 </p>    
 <p align="center">
-    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="500">
+    <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="1000">
 </p>
 
 ### Process flow
@@ -36,7 +36,7 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
         * semantic similarity (vector search)
         * lexical matching (rapidfuzz for character-based scoring) 
 <p align="center">
-    <img src="images/hybrid_search.png" alt="Hybrid Search" width="500">
+    <img src="images/hybrid_search.png" alt="Hybrid Search" width="1000">
 </p>
 * RAG generation
     * Relevant document chunks are retrieved and provided as context to the language model (model='gpt-4.1-mini')
