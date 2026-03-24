@@ -8,23 +8,25 @@ Traditional keyword-based search tools struggle to understand context and intent
 To overcome these challenges, the organization is deploying a Retrieval-Augmented Generation (RAG) system.
 ### Objectives
 * Centralize enterprise knowledge
-      * to unify data sources from SharePoint, emails, and internal QA systems
+  * to unify data sources from SharePoint, emails, and internal QA systems
 * Semantic search with citation
-       * to enable semantic understanding of the keyword search
+  * to enable semantic understanding of the keyword search
 * Decision-making efficiency
-       * to provide accurate responses in shorter time spent
+  * to provide accurate responses in shorter time spent
 * Data governance
-       * to ensure enterprise-grade security and access control using Azure-native servic
+  * to ensure enterprise-grade security and access control using Azure-native services
 
 ## Architecture & Design Decisions
+### RAG Fundemental
 <p align="center">
     <img src="images/rag.png" alt="RAG" width="1000">
-</p>    
+</p>   
+
+### Document Search Process flow
 <p align="center">
     <img src="images/rag_enterprise.png" alt="RAG Enterprise" width="1000">
 </p>
 
-### Process flow
 * Data sources
     * SharePoint Doc, emails and QA records
 * Ingestion & Processing
