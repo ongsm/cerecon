@@ -21,7 +21,7 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
 * RAG is a technique that combines the capabilities of a pre-trained large language model (LLM) with an external data source (Vector Database).
 
 <p align="center">
-    <img src="images/rag.png" alt="RAG" width="400">
+    <img src="images/rag.png" alt="RAG" width="300">
 </p>   
 
 ### Document Search Process flow
@@ -38,9 +38,11 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
     * data is indexing with the selected embedding model and stored in a vector database
     * retrieval combines:
         * semantic similarity (vector search)
-        * lexical matching (rapidfuzz for character-based scoring) 
-<p align="center">
-    <img src="images/hybrid_search.png" alt="Hybrid Search" width="1000">
+        * lexical matching (rapidfuzz for character-based scoring)
+    * hybrid search score computation (with equal weightage for both methods) to obtain the ranking of the relevant documents.
+    * 
+<p align="right">
+    <img src="images/hybrid_search.png" alt="Hybrid Search" width="800">
 </p>
 
 * RAG generation
@@ -52,16 +54,20 @@ To overcome these challenges, the organization is deploying a Retrieval-Augmente
     * The system returns relevant clickable citations
 
 ## Solution Review and Execution
-## Dependencies
+### Dependencies
 * pandas>=2.0.0
 * numpy>=1.24.0
 * databricks-vectorsearch>=2.19.0
 * rapidfuzz
 * openai
 
-## Installation and execution
+### Installation
 1. Clone the repository: git clone https://github.com/ongsm/cerecon.git
 
-## Limitations
-* Time constraints limited further model performance improvement.
+### Output Evaluation & Review
+* Evaluate performance using:
+    * Relevance of retrieved documents
+    * Answer accuracy and completeness
+    * Citation correctness
+  
 
